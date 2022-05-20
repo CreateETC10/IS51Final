@@ -7,3 +7,24 @@ The first will output the number of grades,
 The second will output the average grade
 The third will ouput the precentage of grades above average
 """
+
+"""
+Psuedo-Code
+
+#Point to the file Final.txt
+infile = open("Final.txt", 'r' )
+
+#Strip the list of grades and create a list for the program to read
+grades= [line.rstrip() for lin in file]
+infile.close()
+for i in range(len(grades)): 
+    grades[i] = int(grades[i])
+average = sum(grades)
+num=0
+for grade in grades:
+    if grade > average:
+        num += 1
+ print("Number of grades:")
+ print("Average grade:")
+ print("Percentage of grades above average:")
+"""
